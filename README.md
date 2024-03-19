@@ -1,1 +1,1 @@
-Create a simple game that has scenes.
+REPLACE THIS WITH A DESCRIPTION OF YOUR GAME (in the README.md file).
