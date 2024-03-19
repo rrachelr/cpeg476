@@ -64,7 +64,7 @@ jobs:
                   python ./gitinspector/gitinspector.py ./original-src/ -f tsx,ts --grading -F html -x ./gitinspector > ./dist/report.html
             - name: Copy over index.md to docs/
               run: |
-                  cp index.md docs/index.md
+                  cp README.md docs/index.md
             - name: Generate HTML from Markdown for EGDD
               uses: ldeluigi/markdown-docs@latest
               with:
