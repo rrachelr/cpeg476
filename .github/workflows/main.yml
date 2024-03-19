@@ -62,11 +62,14 @@ jobs:
                   git clone https://github.com/jpwhite3/gitinspector.git
                   git clone ${{github.server_url}}/${{github.repository}} original-src/
                   python ./gitinspector/gitinspector.py ./original-src/ -f tsx,ts --grading -F html -x ./gitinspector > ./dist/report.html
+            - name: Copy over index.md to docs/
+              run: |
+                  cp index.md docs/index.md
             - name: Generate HTML from Markdown for EGDD
               uses: ldeluigi/markdown-docs@latest
               with:
                   src: docs
-                  dst: dist
+                  dst: dist/docs/
             - name: Setup Pages
               uses: actions/configure-pages@v3
             - name: Upload artifact
