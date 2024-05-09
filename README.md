@@ -31,3 +31,7 @@ TEXT GOES HERE
 # Educational Game Design Document
 
 Link to our [egdd](Educational Game Design Document)
+
+# Credits
+
+TEXT GOES HERE
